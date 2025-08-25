@@ -1,6 +1,6 @@
 import pandas as pd
 
-def generateAi():
+def generateAI():
     dataset=pd.read_csv('data-1.csv')
     dataset=dataset.dropna()
     X=dataset.iloc[:,1].values

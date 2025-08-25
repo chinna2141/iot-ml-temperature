@@ -16,7 +16,7 @@ def predict():
     temp = request.args.get('temp')
     temp=float(temp)
     data=[[temp]]
-    result=ai.predict(d)
+    result=ai.predict(data)
     result =result[0]
     return(result)
 if(__name__=="__main__"):

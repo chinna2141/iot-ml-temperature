@@ -11,7 +11,7 @@ app=Flask(__name__)
 def home():
     return('AI Model Server is running')
 
-@app.route('/predict',methods=['GET')
+@app.route('/predict',methods=['GET'])
 def predict():
     temp = request.args.get('temp')
     temp=float(temp

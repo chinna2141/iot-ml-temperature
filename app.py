@@ -14,7 +14,7 @@ def home():
 @app.route('/predict',methods=['GET'])
 def predict():
     temp = request.args.get('temp')
-    temp=float(temp
+    temp=float(temp)
     data=[[temp]]
     result=ai.predict(d)
     result =result[0]
